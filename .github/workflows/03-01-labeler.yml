@@ -16,4 +16,4 @@ jobs:
   my-fourt-job:
     runs-on: self-hosted
     steps:
-              - run: echo "Hello World"
+        - run: echo "Hello World"
