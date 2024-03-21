@@ -1,4 +1,4 @@
-name: 07-02-context 
+name: 07-03-context 
 
 on: 
   workflow_dispatch:
@@ -13,4 +13,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
      - name: Display Event Information 
-       run: echo helloworld
+       run: echo helloworld ${{ inputs.myinput}}
