@@ -13,7 +13,7 @@ jobs:
             with:
               distribution: 'temurin' # See 'Supported distributions' for available options
               java-version: '21'
-          - name: buid 
+          - name: build 
             run: mvn install
           - name: artifact-upload
             uses: actions/upload-artifact@v4
@@ -41,7 +41,7 @@ jobs:
           env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           with:
-            ta# expectation is we have artificat in a run 
+            # expectation is we have artificat in a run 
 
             name: 12-01-release
             on: workflow_dispatch
