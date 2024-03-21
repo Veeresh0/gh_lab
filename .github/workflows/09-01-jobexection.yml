@@ -1,4 +1,4 @@
-name: 09-01-Simple Workflow
+name: 09-01-Job execution
 #on: push
 on: workflow_dispatch
 jobs: 
