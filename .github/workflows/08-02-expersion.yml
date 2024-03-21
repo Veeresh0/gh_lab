@@ -1,4 +1,4 @@
-name: 09-01-Using Expressions
+name: 08-02-Using Expressions
 run-name: 09-01-Using Expressions | DEBUG - ${{ inputs.debug && 'ON' || 'OFF' }}
 
 on:
