@@ -1,13 +1,10 @@
 name: 06-01-eventfilters
-on:
-  push:
+on: 
+  push: 
     branches:
-      -main:
-jobs:
+      - "main"
+jobs: 
   my-first-job:
     runs-on: ubuntu-latest
     steps:
-      run: 
-
-
-
+      - run: echo "Hello World"
