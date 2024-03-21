@@ -1,19 +1,15 @@
-name: 04-01-runners
-on: workflow_dispatch # event tirgger
-jobs: 
-  my-first-job:
+name: 03-01-Labeler
+# on: [pull_request_target]
+on: workflow_dispatch
+jobs:
+  label:
+
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+
     steps:
-      - run: echo "Hello World"
-  my-second-job:
-    runs-on: windows-latest
-    steps:
-      - run: echo "Hello World"
-  my-third-job:
-    runs-on: macos-latest
-    steps:
-        - run: echo "Hello World"
-  my-fourt-job:
-    runs-on: self-hosted
-    steps:
-        - run: echo "Hello World"
+    - uses: actions/labeler@v4
+      with:
+        repo-token: "${{ secrets.GITHUB_TOKEN }}"
