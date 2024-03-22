@@ -1,4 +1,4 @@
-name: 13-01-Matrices
+name: Matrices
 
 on:
   workflow_dispatch
